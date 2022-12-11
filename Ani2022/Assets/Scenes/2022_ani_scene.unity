@@ -217,7 +217,7 @@ Transform:
   m_LocalScale: {x: 6.0701, y: 1, z: 5.0585}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &498627803
 GameObject:
@@ -407,12 +407,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1232447041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232447042}
+  - component: {fileID: 1232447043}
+  m_Layer: 0
+  m_Name: Ratparent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1232447042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232447041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.68, y: -0.95, z: -18.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1480897067}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1232447043
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232447041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc077842815894645a363f923f490c24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1480897066
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1232447042}
     m_Modifications:
     - target: {fileID: 4871890764085911794, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_Name
@@ -424,19 +475,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -468,6 +519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
+--- !u!4 &1480897067 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8369048326342014445, guid: d0a6f54a2a0762044857818b92d17ef1, type: 3}
+  m_PrefabInstance: {fileID: 1480897066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1999666685
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025187557
 GameObject:
@@ -581,7 +637,7 @@ Transform:
   m_Children:
   - {fileID: 498627807}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2025187559
 Animator:
